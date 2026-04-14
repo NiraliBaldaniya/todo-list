@@ -1,0 +1,132 @@
+body{
+    background: linear-gradient(110deg, #bbe2f8, #aee5f3);
+    margin: 200px 160px;
+    backdrop-filter: blur(10px);
+}
+
+
+header{
+    font-size: 70px;
+}
+
+.container{
+    display: flex;
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.left{  width: 60%; }
+
+.right{
+    width: 40%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.input-box{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.input-box input{
+    width: 100%;
+    max-width: 350px;
+    height: 50px;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-size: 17px;
+    border: 1px solid #333535;
+}
+
+.input-btn{
+    width: 90px;
+    height: 50px;
+    border-radius: 5px;
+    background: #3c924a;
+    color: white;
+    border: 1px solid #333535;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.task-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.task-list button{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    background: white;
+    cursor: pointer;
+    width: 220px;
+    height: 60px;
+    margin-top: 20px;
+    transition: 0.2s ease;
+}
+
+img{
+    width: 30px;
+    height: 30px;
+}
+
+.task-list button:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+input[type="checkbox"]{
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #000303;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked { background-color: #012230; }
+
+.task-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #acabab;
+    border-radius: 10px;
+    padding: 10px;
+    background: white;
+    width: 95%;
+    margin: 8px 0;
+    font-size: 18px;
+}
+.right h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+
+.date{
+    font-size: 12px;
+    color: gray;
+    margin-left: auto;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left, .right{
+        width: 100%;
+    }
+}
