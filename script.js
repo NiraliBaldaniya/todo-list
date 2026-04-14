@@ -52,6 +52,7 @@ addbtn.addEventListener("click", () => {
     checkbox.addEventListener("change", () => {
         if (checkbox.checked) {
             task.classList.add("done");
+            task.style.textDecoration = "line-through";
             deleteBtn.style.display = "inline";
         } else {
             task.classList.remove("done");
