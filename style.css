@@ -14,6 +14,7 @@ header{
     gap: 20px;
     max-width: 1100px;
     margin: auto;
+    
 }
 
 .left{  width: 60%; }
@@ -81,7 +82,9 @@ img{
     height: 30px;
 }
 
-.task-list button:hover{
+.task-list button:hover,
+.input-box .input-btn:hover
+{
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
@@ -112,6 +115,7 @@ input[type="checkbox"]:checked { background-color: #012230; }
 .right h1{
     text-align: center;
     font-size: 50px;
+    margin-top: 0 ;
 }
 
 
